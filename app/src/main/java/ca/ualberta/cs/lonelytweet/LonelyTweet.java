@@ -1,4 +1,4 @@
-package ca.ualberta.cs.lonelytwitter;
+package ca.ualberta.cs.lonelytweet;
 
 import java.io.IOException;
 import java.io.Serializable;
@@ -13,7 +13,8 @@ abstract class LonelyTweet implements Serializable {
     protected Date tweetDate;
     protected String tweetBody;
 
-    public Date getTweetDate() {
+    // Made private
+    private Date getTweetDate() {
         return tweetDate;
     }
 

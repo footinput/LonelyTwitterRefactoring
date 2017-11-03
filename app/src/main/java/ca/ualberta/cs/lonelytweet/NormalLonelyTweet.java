@@ -1,4 +1,4 @@
-package ca.ualberta.cs.lonelytwitter;
+package ca.ualberta.cs.lonelytweet;
 
 import java.util.Date;
 
@@ -14,12 +14,10 @@ public class NormalLonelyTweet extends LonelyTweet {
 
 	@Override
 	public boolean isValid() {
-		if (tweetBody.trim().length() == 0
-				|| tweetBody.trim().length() > 10) {
-			return false;
-		}
+		// redundant if statement fixed.
+		return !(tweetBody.trim().length() == 0
+				|| tweetBody.trim().length() > 10);
 
-		return true;
 	}
 
 	@Override

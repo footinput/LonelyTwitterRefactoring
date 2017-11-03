@@ -1,8 +1,9 @@
-package ca.ualberta.cs.lonelytwitter;
+package ca.ualberta.cs.lonelytweet;
 
 import java.util.Date;
 
-public class ImportantLonelyTweet extends LonelyTweet {
+// class made private.
+class ImportantLonelyTweet extends LonelyTweet {
 
 	public ImportantLonelyTweet() {
 	}
@@ -14,12 +15,10 @@ public class ImportantLonelyTweet extends LonelyTweet {
 
 	@Override
 	public boolean isValid() {
-		if (tweetBody.trim().length() == 0
-				|| tweetBody.trim().length() > 20) {
-			return false;
-		}
+		// if statement simplified because it was redundant.
+		return !(tweetBody.trim().length() == 0
+				|| tweetBody.trim().length() > 20);
 
-		return true;
 	}
 
 	@Override

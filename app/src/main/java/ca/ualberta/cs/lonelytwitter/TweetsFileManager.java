@@ -12,9 +12,12 @@ import java.util.List;
 import android.content.Context;
 import android.util.Log;
 
+import ca.ualberta.cs.lonelytweet.NormalLonelyTweet;
+
 public class TweetsFileManager {
 
-	private Context ctx;
+	// Declaration can have a final modifier.
+	private final Context ctx;
 
 	public TweetsFileManager(Context ctx) {
 		this.ctx = ctx;
